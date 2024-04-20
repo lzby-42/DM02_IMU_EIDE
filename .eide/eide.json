@@ -1,0 +1,567 @@
+{
+  "name": "CtrBoard-H7_IMU_TempCtrl",
+  "type": "ARM",
+  "dependenceList": [],
+  "srcDirs": [
+    ".eide/deps"
+  ],
+  "virtualFolder": {
+    "name": "<virtual_root>",
+    "files": [],
+    "folders": [
+      {
+        "name": "::CMSIS",
+        "files": [],
+        "folders": [
+          {
+            "name": "DSP",
+            "files": [
+              {
+                "path": "Drivers/CMSIS/DSP/Source/BasicMathFunctions/BasicMathFunctions.c"
+              },
+              {
+                "path": "Drivers/CMSIS/DSP/Source/BasicMathFunctions/BasicMathFunctionsF16.c"
+              },
+              {
+                "path": "Drivers/CMSIS/DSP/Source/BayesFunctions/BayesFunctions.c"
+              },
+              {
+                "path": "Drivers/CMSIS/DSP/Source/BayesFunctions/BayesFunctionsF16.c"
+              },
+              {
+                "path": "Drivers/CMSIS/DSP/Source/CommonTables/CommonTables.c"
+              },
+              {
+                "path": "Drivers/CMSIS/DSP/Source/CommonTables/CommonTablesF16.c"
+              },
+              {
+                "path": "Drivers/CMSIS/DSP/Source/ComplexMathFunctions/ComplexMathFunctions.c"
+              },
+              {
+                "path": "Drivers/CMSIS/DSP/Source/ComplexMathFunctions/ComplexMathFunctionsF16.c"
+              },
+              {
+                "path": "Drivers/CMSIS/DSP/Source/ControllerFunctions/ControllerFunctions.c"
+              },
+              {
+                "path": "Drivers/CMSIS/DSP/Source/DistanceFunctions/DistanceFunctions.c"
+              },
+              {
+                "path": "Drivers/CMSIS/DSP/Source/DistanceFunctions/DistanceFunctionsF16.c"
+              },
+              {
+                "path": "Drivers/CMSIS/DSP/Source/FastMathFunctions/FastMathFunctions.c"
+              },
+              {
+                "path": "Drivers/CMSIS/DSP/Source/FastMathFunctions/FastMathFunctionsF16.c"
+              },
+              {
+                "path": "Drivers/CMSIS/DSP/Source/FilteringFunctions/FilteringFunctions.c"
+              },
+              {
+                "path": "Drivers/CMSIS/DSP/Source/FilteringFunctions/FilteringFunctionsF16.c"
+              },
+              {
+                "path": "Drivers/CMSIS/DSP/Source/InterpolationFunctions/InterpolationFunctions.c"
+              },
+              {
+                "path": "Drivers/CMSIS/DSP/Source/InterpolationFunctions/InterpolationFunctionsF16.c"
+              },
+              {
+                "path": "Drivers/CMSIS/DSP/Source/MatrixFunctions/MatrixFunctions.c"
+              },
+              {
+                "path": "Drivers/CMSIS/DSP/Source/MatrixFunctions/MatrixFunctionsF16.c"
+              },
+              {
+                "path": "Drivers/CMSIS/DSP/Source/QuaternionMathFunctions/QuaternionMathFunctions.c"
+              },
+              {
+                "path": "Drivers/CMSIS/DSP/Source/StatisticsFunctions/StatisticsFunctions.c"
+              },
+              {
+                "path": "Drivers/CMSIS/DSP/Source/StatisticsFunctions/StatisticsFunctionsF16.c"
+              },
+              {
+                "path": "Drivers/CMSIS/DSP/Source/SupportFunctions/SupportFunctions.c"
+              },
+              {
+                "path": "Drivers/CMSIS/DSP/Source/SVMFunctions/SVMFunctions.c"
+              },
+              {
+                "path": "Drivers/CMSIS/DSP/Source/SVMFunctions/SVMFunctionsF16.c"
+              },
+              {
+                "path": "Drivers/CMSIS/DSP/Source/TransformFunctions/TransformFunctions.c"
+              },
+              {
+                "path": "Drivers/CMSIS/DSP/Source/TransformFunctions/TransformFunctionsF16.c"
+              }
+            ],
+            "folders": []
+          }
+        ]
+      },
+      {
+        "name": "App",
+        "files": [
+          {
+            "path": "App/imu_temp_ctrl.c"
+          }
+        ],
+        "folders": []
+      },
+      {
+        "name": "Application",
+        "files": [],
+        "folders": [
+          {
+            "name": "User",
+            "files": [],
+            "folders": [
+              {
+                "name": "Core",
+                "files": [
+                  {
+                    "path": "Core/Src/main.c"
+                  },
+                  {
+                    "path": "Core/Src/gpio.c"
+                  },
+                  {
+                    "path": "Core/Src/freertos.c"
+                  },
+                  {
+                    "path": "Core/Src/dma.c"
+                  },
+                  {
+                    "path": "Core/Src/spi.c"
+                  },
+                  {
+                    "path": "Core/Src/tim.c"
+                  },
+                  {
+                    "path": "Core/Src/stm32h7xx_it.c"
+                  },
+                  {
+                    "path": "Core/Src/stm32h7xx_hal_msp.c"
+                  },
+                  {
+                    "path": "Core/Src/stm32h7xx_hal_timebase_tim.c"
+                  }
+                ],
+                "folders": []
+              },
+              {
+                "name": "USB_DEVICE",
+                "files": [],
+                "folders": [
+                  {
+                    "name": "App",
+                    "files": [
+                      {
+                        "path": "USB_DEVICE/App/usb_device.c"
+                      },
+                      {
+                        "path": "USB_DEVICE/App/usbd_desc.c"
+                      },
+                      {
+                        "path": "USB_DEVICE/App/usbd_cdc_if.c"
+                      }
+                    ],
+                    "folders": []
+                  },
+                  {
+                    "name": "Target",
+                    "files": [
+                      {
+                        "path": "USB_DEVICE/Target/usbd_conf.c"
+                      }
+                    ],
+                    "folders": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "MDK-ARM",
+            "files": [
+              {
+                "path": "MDK-ARM/startup_stm32h723xx.s"
+              }
+            ],
+            "folders": []
+          }
+        ]
+      },
+      {
+        "name": "Device",
+        "files": [
+          {
+            "path": "Device/BMI088/BMI088driver.c"
+          },
+          {
+            "path": "Device/BMI088/BMI088Middleware.c"
+          },
+          {
+            "path": "Device/Algorithm/kalman_filter.c"
+          },
+          {
+            "path": "Device/Algorithm/QuaternionEKF.c"
+          },
+          {
+            "path": "Device/Algorithm/algorithm.c"
+          },
+          {
+            "path": "Device/BMI088/bsp_dwt.c"
+          },
+          {
+            "path": "Device/Algorithm/controller.c"
+          },
+          {
+            "path": "Device/Algorithm/user_lib.c"
+          },
+          {
+            "path": "Device/Mahony/MahonyAHRS.c"
+          },
+          {
+            "path": "Device/Algorithm/pid.c"
+          }
+        ],
+        "folders": []
+      },
+      {
+        "name": "Drivers",
+        "files": [],
+        "folders": [
+          {
+            "name": "STM32H7xx_HAL_Driver",
+            "files": [
+              {
+                "path": "Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd.c"
+              },
+              {
+                "path": "Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd_ex.c"
+              },
+              {
+                "path": "Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_usb.c"
+              },
+              {
+                "path": "Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c"
+              },
+              {
+                "path": "Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c"
+              },
+              {
+                "path": "Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.c"
+              },
+              {
+                "path": "Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.c"
+              },
+              {
+                "path": "Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c"
+              },
+              {
+                "path": "Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.c"
+              },
+              {
+                "path": "Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.c"
+              },
+              {
+                "path": "Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.c"
+              },
+              {
+                "path": "Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.c"
+              },
+              {
+                "path": "Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.c"
+              },
+              {
+                "path": "Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c"
+              },
+              {
+                "path": "Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c"
+              },
+              {
+                "path": "Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c"
+              },
+              {
+                "path": "Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.c"
+              },
+              {
+                "path": "Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.c"
+              },
+              {
+                "path": "Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.c"
+              },
+              {
+                "path": "Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_spi.c"
+              },
+              {
+                "path": "Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_spi_ex.c"
+              },
+              {
+                "path": "Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c"
+              },
+              {
+                "path": "Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c"
+              }
+            ],
+            "folders": []
+          },
+          {
+            "name": "CMSIS",
+            "files": [
+              {
+                "path": "Core/Src/system_stm32h7xx.c"
+              }
+            ],
+            "folders": []
+          }
+        ]
+      },
+      {
+        "name": "Middlewares",
+        "files": [],
+        "folders": [
+          {
+            "name": "FreeRTOS",
+            "files": [
+              {
+                "path": "Middlewares/Third_Party/FreeRTOS/Source/croutine.c"
+              },
+              {
+                "path": "Middlewares/Third_Party/FreeRTOS/Source/event_groups.c"
+              },
+              {
+                "path": "Middlewares/Third_Party/FreeRTOS/Source/list.c"
+              },
+              {
+                "path": "Middlewares/Third_Party/FreeRTOS/Source/queue.c"
+              },
+              {
+                "path": "Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c"
+              },
+              {
+                "path": "Middlewares/Third_Party/FreeRTOS/Source/tasks.c"
+              },
+              {
+                "path": "Middlewares/Third_Party/FreeRTOS/Source/timers.c"
+              },
+              {
+                "path": "Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c"
+              },
+              {
+                "path": "Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c"
+              },
+              {
+                "path": "Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/port.c"
+              }
+            ],
+            "folders": []
+          },
+          {
+            "name": "USB_Device_Library",
+            "files": [
+              {
+                "path": "Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c"
+              },
+              {
+                "path": "Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c"
+              },
+              {
+                "path": "Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c"
+              },
+              {
+                "path": "Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c"
+              }
+            ],
+            "folders": []
+          }
+        ]
+      }
+    ]
+  },
+  "outDir": "build",
+  "deviceName": null,
+  "packDir": ".pack/Keil/STM32H7xx_DFP.2.3.1",
+  "miscInfo": {
+    "uid": "9ebdd51a3ea63204a15979c1f143fa73"
+  },
+  "targets": {
+    "CtrBoard-H7_IMU_TempCtrl": {
+      "excludeList": [],
+      "toolchain": "AC5",
+      "compileConfig": {
+        "cpuType": "Cortex-M7",
+        "floatingPointHardware": "single",
+        "scatterFilePath": "",
+        "useCustomScatterFile": false,
+        "storageLayout": {
+          "RAM": [
+            {
+              "tag": "RAM",
+              "id": 1,
+              "mem": {
+                "startAddr": "0x30000000",
+                "size": "0x8000"
+              },
+              "isChecked": false,
+              "noInit": false
+            },
+            {
+              "tag": "RAM",
+              "id": 2,
+              "mem": {
+                "startAddr": "0x38000000",
+                "size": "0x4000"
+              },
+              "isChecked": false,
+              "noInit": false
+            },
+            {
+              "tag": "RAM",
+              "id": 3,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "noInit": false
+            },
+            {
+              "tag": "IRAM",
+              "id": 1,
+              "mem": {
+                "startAddr": "0x20000000",
+                "size": "0x20000"
+              },
+              "isChecked": true,
+              "noInit": false
+            },
+            {
+              "tag": "IRAM",
+              "id": 2,
+              "mem": {
+                "startAddr": "0x24000000",
+                "size": "0x50000"
+              },
+              "isChecked": false,
+              "noInit": false
+            }
+          ],
+          "ROM": [
+            {
+              "tag": "ROM",
+              "id": 1,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "isStartup": false
+            },
+            {
+              "tag": "ROM",
+              "id": 2,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "isStartup": false
+            },
+            {
+              "tag": "ROM",
+              "id": 3,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "isStartup": false
+            },
+            {
+              "tag": "IROM",
+              "id": 1,
+              "mem": {
+                "startAddr": "0x8000000",
+                "size": "0x100000"
+              },
+              "isChecked": true,
+              "isStartup": true
+            },
+            {
+              "tag": "IROM",
+              "id": 2,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "isStartup": false
+            }
+          ]
+        },
+        "options": "null"
+      },
+      "uploader": "JLink",
+      "uploadConfig": {
+        "bin": "",
+        "baseAddr": "",
+        "cpuInfo": {
+          "vendor": "null",
+          "cpuName": "null"
+        },
+        "proType": 1,
+        "speed": 8000,
+        "otherCmds": ""
+      },
+      "uploadConfigMap": {},
+      "custom_dep": {
+        "name": "default",
+        "incList": [
+          "Core/Inc",
+          "Drivers/STM32H7xx_HAL_Driver/Inc",
+          "Drivers/STM32H7xx_HAL_Driver/Inc/Legacy",
+          "Middlewares/Third_Party/FreeRTOS/Source/include",
+          "Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS",
+          "Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F",
+          "Drivers/CMSIS/Device/ST/STM32H7xx/Include",
+          "Drivers/CMSIS/Include",
+          "App",
+          "Device",
+          "Device/BMI088/inc",
+          "MDK-ARM/.cmsis/include",
+          "MDK-ARM/RTE/_CtrBoard-H7_IMU_TempCtrl",
+          "MDK-ARM/.eide/deps",
+          "Device/Algorithm",
+          "Device/BMI088",
+          "Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2",
+          "Device/Mahony",
+          "USB_DEVICE/App",
+          "USB_DEVICE/Target",
+          "Middlewares/ST/STM32_USB_Device_Library/Core/Inc",
+          "Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc",
+          ".cmsis/include",
+          ".eide/deps",
+          "Drivers/CMSIS/DSP/PrivateInclude",
+          "Drivers/CMSIS/DSP/Include"
+        ],
+        "libList": [],
+        "sourceDirList": [],
+        "defineList": [
+          "USE_HAL_DRIVER",
+          "STM32H723xx",
+          "ARM_MATH_CM7",
+          "__FPU_PRESENT=1U",
+          "__CC_ARM",
+          "ARM_MATH_MATRIX_CHECK",
+          "ARM_MATH_ROUNDING"
+        ]
+      }
+    }
+  },
+  "version": "3.3"
+}
